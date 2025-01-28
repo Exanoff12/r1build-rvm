@@ -7,12 +7,18 @@ parallel-jobs = 1
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
-build-mode = "both"
-excluded-patches = ""
-included-patches = ""
-version = "auto"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
+included-patches = "'Hide ads' 'Video ads' 'Change header' 'SponsorBlock' 'Remove background playback restrictions' 'Check watch history domain name resolution' 'Remove tracking query parameter' 'Force original audio' 'Remember video quality'"
+exclusive-patches = true
+patcher-args = "-Oheader=premium*header "
+
+#[YouTube]
+#build-mode = "both"
+#excluded-patches = ""
+#included-patches = ""
+#version = "auto"
+#apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+#uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 [Music]
